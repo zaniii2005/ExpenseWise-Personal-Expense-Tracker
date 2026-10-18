@@ -1,0 +1,2 @@
+<?php
+declare(strict_types=1);require_once __DIR__.'/includes/bootstrap.php';if($_SERVER['REQUEST_METHOD']!=='POST')redirect('transactions.php');verify_csrf();$id=filter_input(INPUT_POST,'id',FILTER_VALIDATE_INT);if(!$id||$id<1){flash('error','Invalid transaction ID.');redirect('transactions.php');}$s=$pdo->prepare('DELETE FROM transactions WHERE id=:id');$s->execute(['id'=>$id]);flash($s->rowCount()?'success':'error',$s->rowCount()?'Transaction deleted.':'Transaction not found.');redirect('transactions.php');
