@@ -67,8 +67,8 @@ Manual test checklist
 - [ ] Compare report totals with transaction records.
 - [ ] Test missing titles and invalid amounts.
 - [ ] Test the layout on desktop and mobile.
-Screenshots
-![Uploading ExpenseWise Finance Dashboard Montage.png…]()
+- Screenshots
+- <img width="1312" height="1199" alt="ExpenseWise Finance Dashboard Montage" src="https://github.com/user-attachments/assets/72d0585f-9104-4941-9993-42466a6a418b" />
 
 Future improvements
 - Authentication and separate user accounts
